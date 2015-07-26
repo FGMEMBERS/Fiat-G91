@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+  
+  <!-- Wings tanks (exterior) -->
+  <weight n="0">
+    <name>Wing Left exterior</name>
+    <weight-lb>0</weight-lb>
+    <selected>none</selected>
+    <offsets>
+      <x-m type="double"> -0.395 </x-m>
+      <y-m type="double"> -3.596 </y-m>
+      <z-m type="double"> -1.180 </z-m>
+    </offsets>
+    <opt><name>none</name><lbs>0</lbs></opt>
+    <opt><name>Fuel tank</name><lbs>335</lbs></opt>
+  </weight>
+  
+  <weight n="1">
+    <name>Wing Right exterior</name>
+    <weight-lb>0</weight-lb>
+    <selected>none</selected>
+    <offsets>
+      <x-m type="double"> -0.395 </x-m>
+      <y-m type="double">  3.596 </y-m>
+      <z-m type="double"> -1.180 </z-m>
+    </offsets>
+    <opt><name>none</name><lbs>0</lbs></opt>
+    <opt><name>Fuel tank</name><lbs>335</lbs></opt>
+  </weight>
+  
+  <!-- Smoke tanks (interior) -->
+  <weight n="2">
+    <name>Wing Left interior</name>
+    <weight-lb>0</weight-lb>
+    <selected>none</selected>
+    <offsets>
+      <x-m type="double"> -0.556 </x-m>
+      <y-m type="double"> -2.777 </y-m>
+      <z-m type="double"> -1.205 </z-m>
+    </offsets>
+    <opt><name>none</name><lbs>0</lbs></opt>
+    <opt><name>Smoke tank</name><lbs>196.21</lbs></opt>
+    <opt><name>Fuel tank</name><lbs>335</lbs></opt>
+  </weight>
+  
+  <weight n="3">
+    <name>Wing Right interior</name>
+    <weight-lb>0</weight-lb>
+    <selected>none</selected>
+    <offsets>
+      <x-m type="double"> -0.556 </x-m>
+      <y-m type="double">  2.777 </y-m>
+      <z-m type="double"> -1.205 </z-m>
+    </offsets>
+    <opt><name>none</name><lbs>0</lbs></opt>
+    <opt><name>Smoke tank</name><lbs>196.21</lbs></opt>
+    <opt><name>Fuel tank</name><lbs>335</lbs></opt>
+  </weight>
+  
+  <!-- Tip wings tanks -->
+  <weight n="4">
+    <name>pylon3.L</name>
+    <weight-lb>0</weight-lb>
+    <selected>none</selected>
+    <offsets>
+      <x-m type="double"> -0.256 </x-m>
+      <y-m type="double"> -5.207 </y-m>
+      <z-m type="double"> -0.659 </z-m>
+    </offsets>
+    <opt><name>none</name><lbs>0</lbs></opt>
+    <opt><name>Fuel tank</name><lbs>335</lbs></opt>
+  </weight>
+   
+  <weight n="5">
+    <name>pylon3.R</name>
+    <weight-lb>0</weight-lb>
+    <selected>none</selected>
+    <offsets>
+      <x-m type="double"> -0.256 </x-m>
+      <y-m type="double">  5.207 </y-m>
+      <z-m type="double"> -0.659 </z-m>
+    </offsets>
+    <opt><name>none</name><lbs>0</lbs></opt>
+    <opt><name>Fuel tank</name><lbs>335</lbs></opt>
+  </weight>
+  
+</PropertyList>

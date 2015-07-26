@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- Based on : http://www.oneaviator.eu/PAN%20a%20Rivolto%20-%20CAPitare%20a%20Rivolto/slides/Il%20pannello%20strumenti%20del%20G91.jpg -->
+<PropertyList>
+
+  <path>panel.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>panel</object-name>
+    <object-name>panel2</object-name>
+    
+    <!-- Objets transparents -->
+  </animation>
+
+  <!-- ASI -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/asi/asi.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.088 </y-m>
+      <z-m>  0.072 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ALT -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.098 </y-m>
+      <z-m> -0.006 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- AI -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/ai/ai.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.107 </y-m>
+      <z-m> 0.063 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ACCELEROMETER -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/g/gmeter.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.169 </y-m>
+      <z-m> -0.005 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- TURN -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <offsets>
+      <x-m>  0.003 </x-m>
+      <y-m> -0.027 </y-m>
+      <z-m> -0.037 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- CLOCK -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.032 </y-m>
+      <z-m> -0.037 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- VSI -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <offsets>
+      <x-m> -0.016 </x-m>
+      <y-m>  0.087 </y-m>
+      <z-m> -0.007 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- TACHMETER -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/tach/tach.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.172 </y-m>
+      <z-m> 0.091 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- EGT -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.172 </y-m>
+      <z-m> 0.043 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- FLAPS -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/flaps/flaps.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.108 </y-m>
+      <z-m> -0.066 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- SPOILER -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/spoiler/spoiler.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.108 </y-m>
+      <z-m> -0.104 </z-m>
+    </offsets>
+  </model>
+  
+</PropertyList>

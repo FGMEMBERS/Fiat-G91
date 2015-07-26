@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+  
+  <model>
+    <path>Aircraft/Aermacchi-MB-339/Models/Effects/coloredsmoke/Red.xml</path>
+    <condition>
+      <and>
+        <!-- /sim/model/hide-smoketanks -->
+        <property>sim/multiplay/generic/int[11]</property>
+        <!-- /smoke/active -->
+        <property>sim/multiplay/generic/int[12]</property>
+        <equals>
+          <!-- /smoke/colors -->
+          <property>sim/multiplay/generic/int[13]</property>
+          <value>1</value>
+        </equals>
+      </and>
+    </condition>
+  </model>
+  
+  <model>
+    <path>Aircraft/Aermacchi-MB-339/Models/Effects/coloredsmoke/White.xml</path>
+    <condition>
+      <and>
+        <!-- /sim/model/hide-smoketanks -->
+        <property>sim/multiplay/generic/int[11]</property>
+        <!-- /smoke/active -->
+        <property>sim/multiplay/generic/int[12]</property>
+        <equals>
+          <!-- /smoke/colors -->
+          <property>sim/multiplay/generic/int[13]</property>
+          <value>2</value>
+        </equals>
+      </and>
+    </condition>
+  </model>
+  
+  <model>
+    <path>Aircraft/Aermacchi-MB-339/Models/Effects/coloredsmoke/Green.xml</path>
+    <condition>
+      <and>
+        <!-- /sim/model/hide-smoketanks -->
+        <property>sim/multiplay/generic/int[11]</property>
+        <!-- /smoke/active -->
+        <property>sim/multiplay/generic/int[12]</property>
+        <equals>
+          <!-- /smoke/colors -->
+          <property>sim/multiplay/generic/int[13]</property>
+          <value>3</value>
+        </equals>
+      </and>
+    </condition>
+  </model>
+  
+</PropertyList>
