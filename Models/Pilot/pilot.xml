@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>fighter_default.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>tete</object-name>
+    <object-name>corps</object-name>
+    <object-name>masque</object-name>
+    <object-name>bras</object-name>
+    <object-name>avantbras</object-name>
+    <object-name>main</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>lunettes</object-name>
+  </animation>
+
+  <effect>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
+    <object-name>lunettes</object-name>
+  </effect>
+  
+  <effect>
+    <inherits-from>Effects/model-transparent</inherits-from>
+    <object-name>lunettes</object-name>
+  </effect>
+  
+  <animation>
+    <name>AnimeTete</name>
+    <object-name>lunettes</object-name>
+    <object-name>tete</object-name>
+    <object-name>masque</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>lunettes</object-name>
+    <property>sim/model/door-positions/crew/position-norm</property>
+    <factor> 45 </factor>
+    <center>
+      <x-m> 0.080 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.486 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AnimeTete</object-name>
+    <property>surface-positions/elevator-pos-norm</property>
+    <factor> -15 </factor> 
+    <center>
+      <x-m> 0.074 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.359 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AnimeTete</object-name>
+    <property>surface-positions/rudder-pos-norm</property>
+    <factor> 25 </factor>
+    <center>
+      <x-m> 0.074 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.359 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 0 </y>
+      <z> 1 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>AnimeTete</object-name>
+    <property>surface-positions/left-aileron-pos-norm</property>
+    <factor> -10 </factor>
+    <center>
+      <x-m> 0.074 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.359 </z-m>
+    </center>
+    <axis>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
+    </axis>
+  </animation> 
+
+  <!-- Animation du bras gauche en fonction du throttle -->
+  <animation>
+    <name>BrasComplet</name>
+    <object-name>bras</object-name>
+    <object-name>avantbras</object-name>
+    <object-name>main</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>BrasComplet</object-name>
+    <property>/controls/engines/engine/throttle</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.5 </ind><dep> 20 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> 40 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.055 </x-m>
+      <y-m> -0.111 </y-m>
+      <z-m>  0.248 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation> 
+  
+  <animation>
+    <name>AvantbrasComplet</name>
+    <object-name>avantbras</object-name>
+    <object-name>main</object-name>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>AvantbrasComplet</object-name>
+    <property>/controls/engines/engine/throttle</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.5 </ind><dep> -25 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -45 </dep></entry>
+    </interpolation>
+    <center>
+      <x-m>  0.0285 </x-m>
+      <y-m> -0.2275 </y-m>
+      <z-m>  0.0062 </z-m>
+    </center>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation> 
+  
+  <animation>
+    <type>pick</type>
+    <object-name>corps</object-name>
+    <visible>true</visible>
+    <action>
+      <button>0</button>
+      <repeat>false</repeat>
+      <binding>
+        <command>property-toggle</command>
+        <property>/sim/model/hide-arm</property>
+      </binding>
+    </action>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>bras</object-name>
+    <object-name>avantbras</object-name>
+    <object-name>main</object-name>
+    <object-name>masque</object-name>
+    <condition>
+      <property>/sim/model/hide-arm</property>
+    </condition>
+  </animation>
+  
+</PropertyList>

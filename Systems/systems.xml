@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <smoke>
+    <active type="bool">false</active>
+    <colors type="int">1</colors>
+  </smoke>
+  
+  <refuel>
+    <type type="string">probe</type>
+  </refuel>
+  
+</PropertyList>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim  include="Systems/views.xml">
+ 
+    <description>Fiat G91 (YASim)</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <status>alpha</status> 
+    
+    <fuel-fraction> 0.8 </fuel-fraction>
+    
+    <model>
+      <path>Aircraft/Fiat-G91/Models/g91.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+      <versionPAN>false</versionPAN>
+    </model>
+
+    <startup>
+     <splash-texture>Aircraft/Fiat-G91/g91-splash.png</splash-texture>
+    </startup>
+
+    <sound>
+      <audible>true</audible>
+      <path>Aircraft/Fiat-G91/Sounds/g91-sound.xml</path>
+    </sound>
+    
+    <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/Fiat-G91/Models/Effects/guns/submodels.xml</path>
+    </submodels>
+    
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int   n="0"  type="int">  0 </int>                                         <!--  0 immat -->
+        <int   n="1"  type="int">  0 </int>                                         <!--  1 immat -->
+        <int   n="2"  type="int">  0 </int>                                         <!--  2 immat -->
+        <int   n="3"  type="int">  0 </int>                                         <!--  3 immat -->
+        <int   n="4"  type="int">  0 </int>                                         <!--  4 immat -->
+        <int   n="5"  type="int">  0 </int>                                         <!--  5 immat -->
+        <int   n="6"  type="bool" alias="/sim/model/versionPAN">false</int>         <!--  6 version PAN -->
+        <int   n="7"  type="int">  0 </int>                                         <!--  7 color -->
+        <int   n="8"  alias="/systems/electrical/outputs/nav-lights">  0 </int>     <!--  8 nav-lights -->
+        <int   n="9"  alias="/sim/model/lights/beacon/state">  false </int>         <!--  9 strobe-lights -->
+        <int   n="11" type="bool" alias="/sim/model/hide-smoketanks">true</int>     <!-- 11 Smoke tanks -->
+        <int   n="12" type="bool" alias="/smoke/active">false</int>                 <!-- 12 Smoke active -->
+        <int   n="13" type="int"  alias="/smoke/colors">1</int>                     <!-- 13 Smoke color -->
+        <int   n="14" type="bool" alias="/sim/model/hide-tanks">false</int>         <!-- 14 Smoke tanks -->
+        <int   n="15" type="bool" alias="/sim/model/hide-probe">false</int>         <!-- 15 Probe -->
+        <float n="0"  alias="/sim/model/door-positions/crew/position-norm"/>
+        <float n="1"  alias="/sim/model/door-positions/passenger/position-norm"/>
+        <float n="2"  alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3"  alias="/position/altitude-ft"> 0 </float>                     <!-- altitude for Smoke/Trail -->
+        <float n="4"  alias="/engines/engine[0]/n1"/>
+        <float n="5"  alias="/engines/engine[1]/n1"/>
+        <float n="6"  alias="/engines/engine[0]/n2"/>
+        <float n="7"  alias="/engines/engine[1]/n2"/>
+        <float n="8"  alias="/gear/gear[0]/wow/"/>
+        <float n="9"  alias="/gear/gear[1]/wow/"/>
+        <float n="10" alias="/gear/gear[2]/wow/"/>
+        <float n="11" alias="/gear/gear[0]/rollspeed-ms"/>
+        <float n="12" alias="/gear/gear[1]/rollspeed-ms"/>
+        <float n="13" alias="/gear/gear[2]/rollspeed-ms"/>
+        <float n="14" alias="/controls/engines/engine[0]/throttle"/>
+        <float n="15" alias="/controls/engines/engine[1]/throttle"/>
+        <!-- For Bombable -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>
+        <string n="9" type="string" />
+      </generic>
+    </multiplay>
+    
+    <help include="Systems/help.xml"/>
+
+    <menubar include="Dialogs/g91-menu.xml"/>
+
+  </sim>
+
+  <input include="Systems/g91-keyboard.xml"/>
+  
+  <engines include="Systems/engines.xml"/>
+
+  <controls include="Systems/controls.xml"/>
+
+  <consumables include="Systems/consumables.xml"/>
+  
+  <systems include="Systems/systems.xml"/>
+  
+  <nasal>
+    <doors>
+      <file>Aircraft/Fiat-G91/Nasal/doors.nas</file>
+    </doors>
+    <g91>
+      <file>Aircraft/Fiat-G91/Nasal/liveries.nas</file>
+      <file>Aircraft/Fiat-G91/Nasal/light.nas</file>
+      <file>Aircraft/Fiat-G91/Nasal/millibar.nas</file>
+      <file>Aircraft/Fiat-G91/Nasal/Systems.nas</file>
+    </g91>
+    <gmeter>
+      <file>Aircraft/Fiat-G91/Nasal/gmeter.nas</file>
+    </gmeter>
+    <guns>
+      <file>Aircraft/Fiat-G91/Nasal/weapons.nas</file>
+      <file>Aircraft/Fiat-G91/Nasal/revi.nas</file>
+    </guns>
+  </nasal>
+
+</PropertyList>

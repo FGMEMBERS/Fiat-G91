@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?> 
+
+<PropertyList>
+
+  <sim>
+
+    <model>
+      <livery>
+        <name type="string">(Low) Alabama</name>
+        <texture>Liveries/1024x1024/alabama.png</texture>
+        <specular>
+          <red>   0.3 </red>
+          <green> 0.3 </green>
+          <blue>  0.3 </blue>
+        </specular>
+      </livery>
+      <versionPAN>false</versionPAN>
+    </model>
+    <multiplay>
+      <generic>
+        <!-- /sim/model/versionPAN -->
+        <int n="6" type="bool">false</int>
+      </generic>
+    </multiplay>
+    
+  </sim>
+
+</PropertyList>
