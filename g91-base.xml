@@ -15,6 +15,7 @@
       <livery>
         <file type="string">default</file>
       </livery>
+      <versionPAN>false</versionPAN>
     </model>
 
     <startup>
@@ -40,7 +41,7 @@
         <int   n="3"  type="int">  0 </int>                                         <!--  3 immat -->
         <int   n="4"  type="int">  0 </int>                                         <!--  4 immat -->
         <int   n="5"  type="int">  0 </int>                                         <!--  5 immat -->
-        <int   n="6"  type="bool" alias="/sim/model/hide-tiptanks">false</int>      <!--  6 Tip tanks -->
+        <int   n="6"  type="bool" alias="/sim/model/versionPAN">false</int>         <!--  6 version PAN -->
         <int   n="7"  type="int">  0 </int>                                         <!--  7 color -->
         <int   n="8"  alias="/systems/electrical/outputs/nav-lights">  0 </int>     <!--  8 nav-lights -->
         <int   n="9"  alias="/sim/model/lights/beacon/state">  false </int>         <!--  9 strobe-lights -->

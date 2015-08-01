@@ -14,7 +14,14 @@
           <blue>  0.3 </blue>
         </specular>
       </livery>
+      <versionPAN>true</versionPAN>
     </model>
+    <multiplay>
+      <generic>
+        <!-- /sim/model/versionPAN -->
+        <int n="6" type="bool">true</int>
+      </generic>
+    </multiplay>
     
   </sim>
 

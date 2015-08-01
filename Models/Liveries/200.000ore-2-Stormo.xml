@@ -6,8 +6,8 @@
 
     <model>
       <livery>
-        <name type="string">(High) Tiger Meet</name>
-        <texture>Liveries/2048x2048/tiger-meet.png</texture>
+        <name type="string">(Low) 200.000ore 2 Stormo</name>
+        <texture>Liveries/1024x1024/200.000ore-2-Stormo.png</texture>
         <specular>
           <red>   0.3 </red>
           <green> 0.3 </green>

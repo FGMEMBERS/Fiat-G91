@@ -48,8 +48,8 @@
     <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/g/gmeter.xml</path>
     <offsets>
       <x-m>  0.000 </x-m>
-      <y-m> -0.169 </y-m>
-      <z-m> -0.005 </z-m>
+      <y-m> -0.170 </y-m>
+      <z-m> -0.004 </z-m>
     </offsets>
   </model>
   
@@ -67,7 +67,7 @@
   <model>
     <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/clock/clock.xml</path>
     <offsets>
-      <x-m>  0.000 </x-m>
+      <x-m> -0.002 </x-m>
       <y-m>  0.032 </y-m>
       <z-m> -0.037 </z-m>
     </offsets>
@@ -77,7 +77,7 @@
   <model>
     <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
-      <x-m> -0.016 </x-m>
+      <x-m> -0.001 </x-m>
       <y-m>  0.087 </y-m>
       <z-m> -0.007 </z-m>
     </offsets>
@@ -120,6 +120,168 @@
       <x-m>  0.000 </x-m>
       <y-m> -0.108 </y-m>
       <z-m> -0.104 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- HSI -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/hsi/hsi.xml</path>
+    <offsets>
+      <x-m> 0.002 </x-m>
+      <y-m> 0.005 </y-m>
+      <z-m> 0.062 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- RADIO COMPASS -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/radiocompass/radiocompass.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.166 </y-m>
+      <z-m>  0.072 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- FUEL -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/fuel/fuel.xml</path>
+    <offsets>
+      <x-m> -0.002 </x-m>
+      <y-m>  0.179 </y-m>
+      <z-m> -0.031 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- VOLTMETER -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/voltmeter/voltmeter.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.260 </y-m>
+      <z-m> -0.098 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- ANMETER -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/amps/ammeter.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.309 </y-m>
+      <z-m> -0.104 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- OIL TEMP -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/oiltemp/oiltemp.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.120 </y-m>
+      <z-m> -0.097 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- HYDRAULIC -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/hydraulic/hydraulic.xml</path>
+    <offsets>
+      <x-m> -0.001 </x-m>
+      <y-m>  0.175 </y-m>
+      <z-m> -0.097 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- SWITCH -->
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.237 </y-m>
+      <z-m> 0.020 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m> 0.000 </x-m>
+      <y-m> 0.255 </y-m>
+      <z-m> 0.020 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.234 </y-m>
+      <z-m> -0.035 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.257 </y-m>
+      <z-m> -0.035 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.213 </y-m>
+      <z-m> -0.095 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.140 </y-m>
+      <z-m> -0.041 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.008 </y-m>
+      <z-m> -0.251 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m> -0.037 </y-m>
+      <z-m> -0.300 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/switch/switch.xml</path>
+    <offsets>
+      <x-m>  0.000 </x-m>
+      <y-m>  0.051 </y-m>
+      <z-m> -0.300 </z-m>
+    </offsets>
+  </model>
+
+  <!-- ADF -->  
+  <model>
+    <path>Aircraft/Fiat-G91/Models/Interior/Panel/Instruments/adf/adf.xml</path>
+    <offsets>
+      <x-m> -0.003 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.110 </z-m>
     </offsets>
   </model>
   

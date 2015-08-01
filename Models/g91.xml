@@ -30,6 +30,7 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>fuselage</object-name>
+    <object-name>noze</object-name>
     <object-name>porteA</object-name>
     <object-name>porteAG</object-name>
     <object-name>porteAD</object-name>
@@ -53,8 +54,11 @@
     <object-name>tourverriere</object-name>
     <object-name>pylons</object-name>
     <object-name>pito</object-name>
+    <object-name>nozePAN</object-name>
+    <object-name>reservoirsPAN</object-name>
     
     <object-name>trous</object-name>
+    <object-name>guns</object-name>
     <object-name>protection</object-name>
     <object-name>axeAH</object-name>
     <object-name>axeAB</object-name>
@@ -76,6 +80,7 @@
   <animation>
     <type>material</type>
     <object-name>fuselage</object-name>
+    <object-name>noze</object-name>
     <object-name>porteA</object-name>
     <object-name>porteAG</object-name>
     <object-name>porteAD</object-name>
@@ -99,8 +104,11 @@
     <object-name>tourverriere</object-name>
     <object-name>pylons</object-name>
     <object-name>pito</object-name>
+    <object-name>nozePAN</object-name>
+    <object-name>reservoirsPAN</object-name>
     
     <object-name>trous</object-name>
+    <object-name>guns</object-name>
     <object-name>protection</object-name>
     <object-name>axeAH</object-name>
     <object-name>axeAB</object-name>
@@ -126,6 +134,7 @@
   <effect>
     <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
+    <object-name>noze</object-name>
     <object-name>porteA</object-name>
     <object-name>porteAG</object-name>
     <object-name>porteAD</object-name>
@@ -149,6 +158,8 @@
     <object-name>tourverriere</object-name>
     <object-name>pylons</object-name>
     <object-name>pito</object-name>
+    <object-name>nozePAN</object-name>
+    <object-name>reservoirsPAN</object-name>
   </effect>
 
   <!-- working for Rembrandt -->
@@ -970,5 +981,37 @@
       <z-m> -0.55890 </z-m>
     </offsets>
   </model>
+  
+  <!-- Version PAN ou non -->
+  <animation>
+    <name>VersionPAN</name>
+    <object-name>nozePAN</object-name>
+    <object-name>reservoirsPAN</object-name>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>VersionPAN</object-name>
+    <condition>
+      <!-- /sim/model/versionPAN -->
+      <property>sim/multiplay/generic/int[6]</property>
+    </condition>
+  </animation>
+  
+  <animation>
+    <name>VersionNOPAN</name>
+    <object-name>guns</object-name>
+    <object-name>protection</object-name>
+    <object-name>noze</object-name>
+  </animation>
+  
+  <animation>
+    <type>select</type>
+    <object-name>VersionNOPAN</object-name>
+    <condition>
+      <!-- /sim/model/versionPAN -->
+      <not><property>sim/multiplay/generic/int[6]</property></not>
+    </condition>
+  </animation>
   
 </PropertyList>
